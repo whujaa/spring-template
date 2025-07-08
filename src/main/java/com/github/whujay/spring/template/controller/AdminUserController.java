@@ -28,7 +28,7 @@ public class AdminUserController {
 
     @RequestMapping("/hello")
     public String hello(){
-        LambdaQueryWrapper<AdminUser> queryWrapper = Wrappers.lambdaQuery(AdminUser.class).eq(AdminUser::getUsername, "admin");
+        QueryWrapper<AdminUser> queryWrapper = Wrappers.query(AdminUser.class).eq("username", "admin");
         List<AdminUser> adminUsers = iAdminUserService.getBaseMapper().selectList(queryWrapper);
         System.out.printf(adminUsers.get(0).toString());
         return "hello";
