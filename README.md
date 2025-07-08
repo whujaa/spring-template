@@ -1,3 +1,3 @@
-This is a Spring boot Template project.
+# This is a Spring boot Template project.
 ## Using Architect
-Spring + Spring boot + Mybatis Plus + logback
+Spring + Spring boot + Mybatis Plus + druid + mysql + logback
