@@ -37,3 +37,4 @@ out/
 .vscode/
 gradlew*
 .DS_Store
+/logs
